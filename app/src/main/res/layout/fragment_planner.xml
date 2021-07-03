@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <Button
+        android:id="@+id/btnMyLog"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginBottom="143dp"
+        android:text="@string/my_log" />
+
+    <Button
+        android:id="@+id/btnMyNotes"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnTodaysTasks"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/btnMyGoals"
+        android:layout_toRightOf="@+id/btnMyGoals"
+        android:text="@string/my_notes" />
+
+    <Button
+        android:id="@+id/btnMyTasks"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="149dp"
+        android:text="My Tasks" />
+
+    <Button
+        android:id="@+id/btnMyGoals"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnMyTasks"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="77dp"
+        android:text="@string/my_goals" />
+
+    <Button
+        android:id="@+id/btnTodaysTasks"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_toEndOf="@+id/btnMyTasks"
+        android:layout_toRightOf="@+id/btnMyTasks"
+        android:text="My Schedule" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myproject">
+
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject">
+        <activity android:name=".TimerActivity"></activity>
+        <activity android:name=".mytasks.TaskViewer" />
+        <activity android:name=".scheduleactivities.ScheduleActivity" />
+        <activity android:name=".userlogactivities.LogActivity" />
+        <activity android:name=".goalactivities.ShowTask" />
+        <activity android:name=".goalactivities.ShowGoal" />
+        <activity android:name=".goalactivities.AddGoal" />
+        <activity android:name=".goalactivities.GoalsActivity" />
+        <activity android:name=".noteactivites.EditNote" />
+        <activity
+            android:name=".noteactivites.ShowNote"
+            android:label="@string/title_activity_edit_note"
+            android:theme="@style/Theme.MyProject.NoActionBar" />
+        <activity android:name=".noteactivites.AddNote">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".noteactivites.NotesActivity" />
+        </activity>
+        <activity android:name=".noteactivites.NotesActivity" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".OptionsActivity" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
